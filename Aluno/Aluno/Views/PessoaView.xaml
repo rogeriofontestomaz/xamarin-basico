@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aluno.Views.PessoaView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="imgBanner" Source="everis.png" />
+            <Label Text="Nome:" />
+            <Entry Text="{Binding Nome}" Placeholder="" />
+            <Label Text="Email:" />
+            <Entry Text="{Binding Email}" Placeholder="" />
+            <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Button x:Name="btnAdd" Text="Add" Command="{Binding AddItems}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
